@@ -1,0 +1,95 @@
+<div>
+    <app-navbar></app-navbar>
+
+    <div class="outlet">
+        <div class="container">
+            <br>
+            <form class="form-horizontal p-3 mb-5 rounded" [formGroup]="studentForm">
+                <h4 class="form-title">Edit Student</h4>
+                <div class="horizontal-line"></div>
+                <h4 class="form-title2">
+                    Student Details
+                </h4>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Full Name" name="name"
+                        formControlName="name" ngModel required>
+                    <small class="text-danger"
+                        *ngIf="studentForm.get('name')?.invalid && studentForm.get('name')?.touched">Name is
+                        required</small>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
+                    <small class="text-danger"
+                        *ngIf="studentForm.get('email')?.invalid && studentForm.get('email')?.touched">Enter correct
+                        email</small>
+                </div>
+                <div class="form-group">
+                    <label>Mobile No</label>
+                    <input type="text" class="form-control" id="mobileno" placeholder="Mobile No (0714568952)"
+                        formControlName="mobileNo" ngModel required>
+                    <small class="text-danger"
+                        *ngIf="studentForm.get('mobileNo')?.invalid && studentForm.get('mobileNo')?.touched">Enter valid
+                        mobile no</small>
+                </div>
+                <div class="form-group">
+                    <label>Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="Address" formControlName="address"
+                        ngModel required>
+                    <small class="text-danger"
+                        *ngIf="studentForm.get('address')?.invalid && studentForm.get('address')?.touched">Address is
+                        required</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Date of Birth</label>
+
+                    <input type="text" class="form-control" placeholder="Select Date" bsDatepicker
+                        formControlName="dateOfBirth">
+                </div>
+
+
+                <br>
+                <!-- <div class="form-check form-check-flat form-check-primary" *ngFor="let chk of checkboxes">
+                <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" [disabled]="chk.checked" (click)="disableOther(chk)">
+          {{chk.value}}
+        </label>
+            </div> -->
+
+                <!-- <div class="form-group">
+                <label for="exampleInputUsername1">Card No</label>
+                <input type="number" class="form-control" id="cardno" placeholder="Card No (16 digits)" formControlName="cardNo" ngModel required>
+                <small class="text-danger">Enter a valid card no</small>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputUsername1">CVC</label>
+                <input type="number" class="form-control" id="cvc" placeholder="CVC (3 digits)" formControlName="cvc" ngModel required>
+                <small class="text-danger">Enter a valid cv</small>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputUsername1">Expiration Month</label>
+                <ng-select [items]="months" bindLabel="name" bindValue="id" formControlName="monthExpire" ngModel required>
+                </ng-select>
+                <small class="text-danger">Select the month</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputUsername1">Expiration Year</label>
+                <ng-select [items]="years" bindLabel="name" bindValue="id" formControlName="yearExpire" ngModel required>
+                </ng-select>
+                <small class="text-danger" >Select the year</small>
+            </div>
+            <p></p>-->
+                <div class="shopping-form-button-container">
+                    <button type="submit" class="btn btn-submit" (click)="updateStudent()"
+                        [disabled]="!studentForm.valid">Update</button>
+
+                    <button class="btn btn-cancel" (click)="navigatebackToHome()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

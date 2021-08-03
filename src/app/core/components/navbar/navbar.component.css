@@ -1,0 +1,18 @@
+.navbar {
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 2px 3px #18181845;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-item {
+    /* outline-style: solid; */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.shop-name {
+    /* outline-style: solid; */
+    margin-left: 15px;
+    margin-right: 25px;
+}

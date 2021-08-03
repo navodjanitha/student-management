@@ -1,0 +1,38 @@
+[
+   {
+      "$key": "key1",
+      "title": "Pencil Nataraj1.2",
+      "imageUrl": "example.jpg",
+      "price": 10,
+      "quantity": 2
+    },
+  {
+    "$key": "key2",
+    "title": "Atlas Exercise Book 120",
+    "imageUrl": "example-book.jpg",
+    "price": 65,
+    "quantity": 4
+  }
+,
+  {
+    "$key": "key3",
+    "title": "Pencil Box ",
+    "imageUrl": "example-pencilBox.jpg",
+    "price": 350,
+    "quantity": 1
+  },
+  {
+    "$key": "key4",
+    "title": "Ruler 30cm",
+    "imageUrl": "example-ruler.jpg",
+    "price": 60,
+    "quantity": 2
+  },
+  {
+    "$key": "key5",
+    "title": "Pencil cutter",
+    "imageUrl": "example-pencilCutter.jpg",
+    "price": 10,
+    "quantity": 5
+  }
+  ]

@@ -1,0 +1,98 @@
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.card {
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 2px;
+    z-index: 10;
+    box-shadow: 0 2px 3px #3a393945;
+    background-color: rgb(245, 244, 244);
+    border-color: rgb(245, 244, 244);
+}
+
+.card-inner-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn-primary {
+    margin-right: 10px;
+}
+
+.card-title {
+    color: blue;
+}
+
+.card-description {
+    color: blueviolet;
+}
+
+input.ng-touched.ng-invalid {
+    border: 1px solid red;
+}
+
+ng-select.ng-touched.ng-invalid {
+    border: 1px solid red;
+}
+
+.form-title {
+    color: #595959;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.horizontal-line {
+    background-color: #6e7d88;
+    height: 2px;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #5a8bbc;
+    /* background-image: url("assets/imgs/bg9.jpg");
+    background-repeat: repeat-y;
+    background-size: 100% 100%; */
+}
+
+.form-horizontal {
+    background-color: #fcfcfc;
+    border-radius: 2px;
+    z-index: 10;
+    box-shadow: 0 2px 3px #3a393945;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.btn-register {
+    background-color: #5a8bbc;
+    border-radius: 40px;
+    width: 75px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    /* outline-style: solid; */
+}
+
+.vertical-line {
+    background-color: #545455;
+    height: 30px;
+    width: 2px;
+    /* margin-bottom: 20px; */
+}

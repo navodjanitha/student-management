@@ -1,0 +1,29 @@
+.container {
+    width: 40%;
+}
+
+.form-title2 {
+    color: #5a8bbc;
+}
+
+.btn-submit {
+    width: 50%;
+    text-align: center;
+    background-color: rgb(48, 133, 214);
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-cancel {
+    width: 50%;
+    text-align: center;
+    background-color: #6e7d88;
+    color: white;
+}
+
+.shopping-form-button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-bottom: 10px;
+}
