@@ -1,4 +1,4 @@
-# SchoolMate
+# SchoolMate - Front End
 
 This is a sample project developed as an Student Management Application
 
